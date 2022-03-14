@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Server Hiring</title>
+</head>
+<body>
+    <header>
+        <h1 class=title> Create server </h1>
+    </header>
+    <main>
+        <form class="create_form">
+            <label>Name: </label>
+            <input class="u-full-width" type="text" id="name" name="name">
+            <label>Os: </label>
+            <input class="u-full-width" type="text" id="os" name="os">
+            <label>Memory: </label>
+            <input class="u-full-width" type="text" id="mem" name="mem">
+            <label>CPU cores: </label>
+            <input class="u-full-width" type="text" id="cpu" name="cpu">
+            <button class="button-primary">RUN</button>
+        </form>
+        <div class=containerData>
+            <p id=containerIp> </p>
+            <p id=containerId> </p>
+        </div>
+    </main>
+    <script src="createServer.js"></script>
+</body>
+</html>
